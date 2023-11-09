@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:t_store/utils/theme/app_theme.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const App());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      ),
+      themeMode: ThemeMode.system,
+      theme: TAppTheme.light,
+      darkTheme: TAppTheme.dark,
     );
   }
 }
