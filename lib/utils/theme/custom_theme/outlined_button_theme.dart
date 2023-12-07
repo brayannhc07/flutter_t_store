@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:t_store/utils/constants/colors.dart';
+import 'package:t_store/utils/constants/sizes.dart';
 
 class TOutlinedButtonTheme {
   TOutlinedButtonTheme._();
@@ -6,16 +8,17 @@ class TOutlinedButtonTheme {
   static final light = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
+      foregroundColor: TColors.dark,
+      side: const BorderSide(color: TColors.borderPrimary),
       textStyle: const TextStyle(
         fontSize: 16,
-        color: Colors.black,
+        color: TColors.black,
         fontWeight: FontWeight.w600,
       ),
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      padding: const EdgeInsets.symmetric(
+          vertical: TSizes.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(TSizes.buttonRadius),
       ),
     ),
   );
@@ -23,16 +26,17 @@ class TOutlinedButtonTheme {
   static final dark = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blueAccent),
+      foregroundColor: TColors.light,
+      side: const BorderSide(color: TColors.borderPrimary),
       textStyle: const TextStyle(
         fontSize: 16,
-        color: Colors.white,
+        color: TColors.textWhite,
         fontWeight: FontWeight.w600,
       ),
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      padding: const EdgeInsets.symmetric(
+          vertical: TSizes.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(TSizes.buttonRadius),
       ),
     ),
   );
