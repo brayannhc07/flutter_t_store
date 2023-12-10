@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/theme/custom_theme/bottom_sheet_theme.dart';
 import 'package:t_store/utils/theme/custom_theme/checkbox_theme.dart';
 import 'package:t_store/utils/theme/custom_theme/chip_theme.dart';
@@ -15,11 +16,12 @@ class TAppTheme {
   static ThemeData light = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    disabledColor: TColors.grey,
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    primaryColor: TColors.primary,
     textTheme: TTextTheme.light,
     chipTheme: TChipTheme.light,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: TColors.white,
     appBarTheme: TAppBarTheme.light,
     checkboxTheme: TCheckboxTheme.light,
     bottomSheetTheme: TBottomSheetTheme.light,
@@ -31,11 +33,12 @@ class TAppTheme {
   static ThemeData dark = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    disabledColor: TColors.grey,
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
+    primaryColor: TColors.primary,
     textTheme: TTextTheme.dark,
     chipTheme: TChipTheme.dark,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: TColors.black,
     appBarTheme: TAppBarTheme.dark,
     checkboxTheme: TCheckboxTheme.dark,
     bottomSheetTheme: TBottomSheetTheme.dark,

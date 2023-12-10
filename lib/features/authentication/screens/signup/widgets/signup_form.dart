@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:t_store/features/authentication/screens/signup/verify_email_screen.dart';
+
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
 
@@ -72,7 +75,9 @@ class TSignupForm extends StatelessWidget {
           const TTermsAndConditionsCheckbox(),
           const SizedBox(height: TSizes.spaceBtwSections),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.to(() => const VerifyEmailScreen());
+            },
             child: const Center(child: Text(TTexts.createAccount)),
           ),
         ],
