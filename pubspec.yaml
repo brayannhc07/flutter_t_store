@@ -45,6 +45,7 @@ dependencies:
   get_storage: ^2.1.1
   flutter_native_splash: ^2.3.5
   smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +77,7 @@ flutter:
      - assets/images/on_boarding_images/
      - assets/images/animations/
      - assets/icons/categories/
+     - assets/images/products/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
